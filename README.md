@@ -32,8 +32,22 @@ As of now, there are three different scales of `ViT` models
 2. ViT-L SAM (1.25 GB)
 3. ViT-H SAM (2.56 GB)
 
+## Inference
+We can use any of these scale versions of `SAM ViT` for running inference on video, image etc.
+
+1. Download the weights using `hf hub` link of the official `fbaipublicfiles` link like this 
+```
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+```
+In this, we are using `ViT-H SAM` model.
+2. Clone the repo using this 
+```
+git clone https://github.com/facebookresearch/segment-anything.git
+```
+3. Run setup.py to install the module
 ### Links
 1. https://github.com/facebookresearch/segment-anything [Official Repo]
 2. https://arxiv.org/pdf/2304.02643.pdf [Paper]
 3. https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/ [Blog]
 4. https://huggingface.co/ybelkada/segment-anything [HF Hub Weights]
+5. https://www.kaggle.com/code/raghvender/segment-anything-sam-onnx [Kaggle Notebook]
